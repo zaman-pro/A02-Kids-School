@@ -18,6 +18,7 @@ body {
   font-optical-sizing: auto;
   font-weight: normal;
   font-style: normal;
+  line-height: normal;
 
   /* background: url(./assets/bg.png) center no-repeat;
   border: 1px solid red; */
@@ -29,6 +30,18 @@ body {
 
 .flex {
   display: flex;
+}
+
+.button {
+  color: #fff;
+  font-size: 1.25rem;
+  font-weight: 700;
+  line-height: 30px;
+  padding: 10px 60px;
+
+  border: none;
+  border-radius: 12px;
+  background-color: #fea301;
 }
 /* navbar style start here */
 .nav-bar {
@@ -84,14 +97,7 @@ body {
 }
 
 .nav-btn {
-  color: #fff;
-  font-size: 1.25rem;
   font-weight: 600;
-  padding: 10px 60px;
-
-  border: none;
-  border-radius: 12px;
-  background-color: #fea301;
 }
 
 .nav-btn:hover {
@@ -103,8 +109,50 @@ body {
   font-size: 1.875rem;
 }
 
+/* banner style start here */
+.banner-container {
+  align-items: center;
+  gap: 50px;
+  padding: 0 140px;
+}
+
+.banner-left {
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+}
+
+.banner-title {
+  max-width: 640px;
+  color: #111;
+  font-size: 3.5rem;
+  font-weight: 700;
+  line-height: 61px;
+}
+
+.txt-orange {
+  color: #fea301;
+}
+
+.txt-blue {
+  color: #01acfd;
+}
+
+.banner-description {
+  color: #111;
+  font-size: 1.25rem;
+  font-weight: 400;
+}
+
+.banner-btn {
+  background-color: #111;
+}
+
+.banner-btn:hover {
+  background-color: #fea301;
+}
 /* responsive  for iPhone 13 and iphone 14 */
-@media screen and (max-width: 390px) {
+@media screen and (max-width: 576px) {
   .nav-bar {
     margin: 0 auto;
     padding: 12px 16px;
