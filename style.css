@@ -172,4 +172,37 @@ body {
   .nav-icon {
     display: block;
   }
+
+  .banner-container {
+    flex-direction: column-reverse;
+    gap: 20px;
+    padding: 20px 0;
+  }
+
+  .banner-img {
+    max-width: 337px;
+  }
+
+  .banner-left {
+    max-width: 357px;
+    gap: 18px;
+    text-align: center;
+    align-items: center;
+  }
+
+  .banner-title {
+    font-size: 2rem;
+    line-height: normal;
+  }
+
+  .banner-description {
+    font-size: 0.875rem;
+    font-weight: 500;
+  }
+
+  .banner-btn {
+    font-size: 1rem;
+    padding: 6px 24px;
+    border-radius: 8px;
+  }
 }
