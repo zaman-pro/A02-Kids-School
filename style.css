@@ -367,6 +367,23 @@ main section {
   grid-row: span 2;
   grid-column: span 2;
 }
+
+.float-btn {
+  position: relative;
+  left: 20px;
+  bottom: 75px;
+
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 28.761px;
+  text-transform: capitalize;
+
+  padding: 15px 19px;
+  border: none;
+  border-radius: 48px;
+  background: #3cd8e8;
+}
 /* footer style start here */
 footer {
   /* flex: 1; */
