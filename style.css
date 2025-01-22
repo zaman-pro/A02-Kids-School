@@ -274,7 +274,97 @@ main section {
 }
 
 /* our stories style start here */
+.stories-container {
+  flex-direction: column;
+  align-items: center;
+  gap: 80px;
+  background: url(./assets/bg.png) 50% / cover repeat,
+    linear-gradient(
+      0deg,
+      rgba(254, 163, 1, 0.3) 0%,
+      rgba(255, 255, 255, 0.3) 100%
+    );
+}
 
+/* footer style start here */
+footer {
+  /* flex: 1; */
+  padding: 123px 140px;
+
+  color: #fff;
+  background-color: #01acfd;
+}
+
+.footer-left {
+  width: 50%;
+}
+
+.footer-middle,
+.footer-right {
+  width: 25%;
+}
+
+.footer-menu,
+.footer-left,
+.footer-middle,
+.footer-right {
+  flex-direction: column;
+  gap: 32px;
+}
+
+.footer-left {
+  gap: 35.68px;
+}
+
+.logo-name h2 {
+  font-size: 2.634rem;
+  font-weight: 700;
+  line-height: 39.5px;
+
+  max-width: 206.109px;
+}
+
+.footer-left p {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 400;
+  max-width: 399px;
+}
+
+.footer-middle h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.footer-menu {
+  gap: 20px;
+}
+
+.footer-link a {
+  color: #fff;
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
+.footer-link a:hover {
+  color: #111;
+  text-decoration: underline;
+}
+
+.footer-right h3 {
+  font-size: 1.625rem;
+  font-weight: 700;
+  line-height: 26px;
+}
+
+.footer-social {
+  gap: 10px;
+}
+
+.footer-social a:hover {
+  /* filter: grayscale(100%); */
+  filter: drop-shadow(2px 2px 2px rgb(243, 240, 240));
+}
 /* responsive  for iPhone 13 and iphone 14 */
 @media screen and (max-width: 576px) {
   .nav-bar {
