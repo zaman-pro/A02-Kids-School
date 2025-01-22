@@ -307,8 +307,8 @@ main section {
   border-radius: 16px 16px 0px 0px;
 }
 
-.stories-large-content,
-.stories-large {
+/* .stories-large, */
+.stories-large-content {
   display: flex;
   flex-direction: column;
   gap: 50px;
@@ -371,7 +371,7 @@ main section {
 .float-btn {
   position: relative;
   left: 20px;
-  bottom: 75px;
+  bottom: 30px;
 
   color: #fff;
   font-size: 1rem;
@@ -465,6 +465,13 @@ footer {
 }
 /* responsive  for iPhone 13 and iphone 14 */
 @media screen and (max-width: 576px) {
+  .float-btn {
+    max-width: 103px;
+    font-size: 0.571rem;
+    font-weight: 500;
+    line-height: normal;
+  }
+
   .marquee-enroll {
     display: none;
   }
