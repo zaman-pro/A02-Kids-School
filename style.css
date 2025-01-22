@@ -121,6 +121,13 @@ main section {
   font-size: 1.875rem;
 }
 
+/* marquee style start here */
+.marquee-enroll {
+  color: #f0aa00;
+  font-size: 1.5rem;
+  padding: 0 140px;
+}
+
 /* banner style start here */
 .banner-container {
   align-items: center;
@@ -398,6 +405,9 @@ footer {
 }
 /* responsive  for iPhone 13 and iphone 14 */
 @media screen and (max-width: 576px) {
+  .marquee-enroll {
+    display: none;
+  }
   .nav-bar {
     margin: 0 auto;
     padding: 12px 16px;
