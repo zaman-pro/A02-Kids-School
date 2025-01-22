@@ -286,6 +286,37 @@ main section {
     );
 }
 
+.stories-large,
+.stories-small {
+  border-radius: 16px;
+  background: #fff;
+}
+
+.stories-small img {
+  border-radius: 16px 16px 0px 0px;
+}
+
+.stories-large img {
+  border-radius: 16px 16px 0px 0px;
+}
+
+.stories-large h3 {
+  color: #000;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 38.347px;
+}
+
+.stories-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.stories-large {
+  grid-row: span 2;
+  grid-column: span 2;
+}
 /* footer style start here */
 footer {
   /* flex: 1; */
@@ -356,7 +387,7 @@ footer {
   font-weight: 700;
   line-height: 26px;
 }
-
+.logo-name,
 .footer-social {
   gap: 10px;
 }
@@ -463,5 +494,64 @@ footer {
 
   .curr-btn-container {
     display: none;
+  }
+
+  .footer {
+    padding: 60px 20px;
+
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  .footer-left,
+  .footer-middle,
+  .footer-right {
+    width: 100%;
+  }
+
+  .footer-left {
+    gap: 24px;
+  }
+
+  .footer-middle {
+    gap: 28px;
+  }
+
+  .footer-right {
+    gap: 37;
+  }
+
+  .logo-name h2 {
+    font-size: 2.233rem;
+  }
+
+  .footer-left p {
+    font-size: 1rem;
+  }
+
+  .footer-middle h3 {
+    font-size: 1.272rem;
+    font-weight: 600;
+  }
+
+  .footer-menu {
+    gap: 17px;
+  }
+
+  .footer-link a {
+    font-size: 1.06rem;
+  }
+
+  .footer-right h3 {
+    font-size: 1.375rem;
+    line-height: 22px;
+  }
+
+  .footer-social {
+    gap: 8px;
+  }
+
+  .footer-social img {
+    max-width: 33.913px;
   }
 }
