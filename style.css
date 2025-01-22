@@ -1,11 +1,12 @@
 /* google font */
-@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
 
 /* shared style */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+
   text-decoration: none;
   list-style: none;
 }
@@ -13,15 +14,17 @@
 body {
   max-width: 1440px;
   margin: 0 auto;
+  background-color: #f7f7f7;
 
   font-family: "Quicksand", serif;
   font-optical-sizing: auto;
   font-weight: normal;
   font-style: normal;
   line-height: normal;
+}
 
-  /* background: url(./assets/bg.png) center no-repeat;
-  border: 1px solid red; */
+main section {
+  padding: 60px 140px;
 }
 
 .hide {
@@ -43,14 +46,19 @@ body {
   border-radius: 12px;
   background-color: #fea301;
 }
+
+.section-title {
+  color: #000;
+  font-size: 2.875rem;
+  font-weight: 700;
+  line-height: 57.5px;
+}
 /* navbar style start here */
 .nav-bar {
   justify-content: space-between;
   align-items: center;
   padding: 0 140px;
   margin: 20px auto;
-
-  /* border: 1px solid green; */
 }
 
 .nav-logo {
@@ -63,6 +71,10 @@ body {
   font-size: 2rem;
   font-weight: 700;
   line-height: 30px;
+}
+
+.nav-txt:hover {
+  color: #fea301;
 }
 
 .nav-menu {
@@ -151,6 +163,118 @@ body {
 .banner-btn:hover {
   background-color: #fea301;
 }
+
+/* standard curriculum style start here */
+.curr-container {
+  flex-direction: column;
+  align-items: center;
+  gap: 80px;
+  background: url(./assets/bg.png) 50% / cover no-repeat;
+}
+
+.card-container {
+  gap: 28.29px;
+}
+
+.card-container div {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  gap: 32px;
+  flex: 1;
+
+  text-align: center;
+  padding: 52px 40px;
+
+  border-radius: 18.864px;
+  box-shadow: 0px 0px 28.296px 0.943px rgba(0, 0, 0, 0.05) inset;
+}
+
+.card-kinder {
+  border: 0.943px solid #def5ff;
+  background: linear-gradient(180deg, #def5ff 0%, rgba(255, 255, 255, 0) 40%),
+    #fff;
+}
+
+.card-elementary {
+  border: 0.943px solid #fff4dc;
+  background: linear-gradient(180deg, #fff4dc 0%, rgba(255, 255, 255, 0) 40%),
+    #fff;
+}
+
+.card-middle {
+  border: 0.943px solid #f2e8ff;
+  background: linear-gradient(180deg, #eee1ff 0%, rgba(255, 255, 255, 0) 40%),
+    #fff;
+}
+
+.card-container div h3 {
+  color: #202020;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 30.654px;
+}
+
+.card-container div p {
+  font-family: "Raleway", serif;
+  color: #808080;
+  font-size: 0.943rem;
+  font-weight: 500;
+  line-height: 28.296px;
+}
+
+.card-container div a {
+  font-size: 15.091px;
+  font-weight: 700;
+  line-height: 28.296px;
+}
+
+.card-container div a:hover {
+  color: #111;
+  text-decoration: underline;
+}
+
+.card-kinder a {
+  color: #64c8ff;
+}
+
+.card-elementary a {
+  color: #f0aa00;
+}
+
+.card-middle {
+  color: #8700ff;
+}
+
+.curr-btn-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.curr-btn-container a {
+  width: 60px;
+  height: 60px;
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 900;
+  line-height: 24px;
+  border-radius: 50%;
+  background-color: #fea301;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.curr-btn-container a:hover {
+  background-color: #111;
+}
+
+/* our stories style start here */
+
 /* responsive  for iPhone 13 and iphone 14 */
 @media screen and (max-width: 576px) {
   .nav-bar {
